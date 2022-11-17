@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/img1"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gambar2"
+        android:layout_below="@+id/img1"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/img2"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img2"
+        android:text="Warteg Online"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/poppinssemibold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:id="@+id/txt_1"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_1"
+        android:text="Laper tadi mager kami solusinya, anda tinggal pilih menu favorit biarkan kami yang mengantarnya."
+        android:gravity="center"
+        android:padding="30dp"
+        android:layout_marginTop="15dp"
+        android:textStyle="italic"
+        android:textColor="@color/black"
+        android:fontFamily="@font/poppinsregular"
+        android:id="@+id/txt_2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_2"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Login"
+        android:onClick="btn_1"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/btn_1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_1"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:width="300dp"
+        android:text="Register"
+        android:onClick="btn_2"
+        android:background="@drawable/button_shape"
+        android:textColor="@color/white"
+        android:textSize="25dp"
+        android:id="@+id/btn_2"/>
+
+</RelativeLayout>
